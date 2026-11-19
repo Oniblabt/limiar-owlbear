@@ -2,7 +2,7 @@
   "name": "LIMIAR — Mesa automática",
   "version": "0.1.0",
   "manifest_version": 1,
-  "description": "Monta as cenas da aventura O Pavilhão 4 do RPG LIMIAR (mapas, grid, névoa, personagens, criaturas e itens) e traz o Medidor de Barulho e a perseguição.",
+  "description": "Monta a aventura O Pavilhão 4 do LIMIAR: mapas, névoa, tokens, Medidor de Barulho e perseguição.",
   "author": "Thiago",
   "action": {
     "title": "LIMIAR",
