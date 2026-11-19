@@ -1,0 +1,27 @@
+:root { color-scheme: dark; --fundo:#141313; --painel:#1d1b1b; --borda:#3a3333; --osso:#d8cfc0; --dim:#8b8279; --vermelho:#b3392f; --verde:#6f8f62; --ambar:#c9a14a; }
+* { box-sizing: border-box; }
+body { margin:0; background:var(--fundo); color:var(--osso); font: 13px/1.4 "Courier New", monospace; }
+header { display:flex; justify-content:space-between; align-items:baseline; padding:10px 12px 6px; border-bottom:2px solid var(--vermelho); }
+h1 { margin:0; font-size:20px; letter-spacing:6px; }
+#papel { color:var(--dim); font-size:11px; }
+main { padding:8px 12px 16px; }
+section { background:var(--painel); border:1px solid var(--borda); padding:8px 10px; margin:8px 0; }
+h2 { margin:0 0 6px; font-size:12px; letter-spacing:2px; color:var(--vermelho); text-transform:uppercase; }
+.dica { color:var(--dim); font-size:11px; margin:4px 0; }
+button { background:#2a2626; color:var(--osso); border:1px solid var(--borda); padding:5px 8px; font:inherit; cursor:pointer; }
+button:hover { border-color:var(--osso); }
+button.principal { background:var(--vermelho); border-color:var(--vermelho); color:#fff; width:100%; padding:7px; margin-top:4px; }
+button:disabled { opacity:.4; cursor:default; }
+.linha { display:flex; align-items:center; justify-content:space-between; gap:6px; margin:3px 0; }
+.linha span { flex:1; }
+.salas button { min-width:70px; }
+.medidor { display:grid; grid-template-columns:repeat(11,1fr); gap:2px; margin:6px 0; }
+.medidor div { height:16px; background:#2a2626; border:1px solid var(--borda); font-size:9px; text-align:center; color:var(--dim); }
+.medidor div.on { background:var(--ambar); color:#000; }
+.medidor div.on.alto { background:var(--vermelho); color:#fff; }
+.estado { font-weight:bold; letter-spacing:2px; }
+.contador { display:flex; gap:3px; flex-wrap:wrap; margin:4px 0; }
+.contador i { width:16px; height:16px; border:1px solid var(--borda); background:#2a2626; display:inline-block; }
+.contador i.on { background:var(--verde); }
+.contador.captura i.on { background:var(--vermelho); }
+input[type=number] { width:48px; background:#2a2626; color:var(--osso); border:1px solid var(--borda); font:inherit; padding:3px; }
